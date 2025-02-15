@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Jeu de la Grotte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Le Jeu de la Grotte</h1>
+        <div id="gameOutput" class="game-output"></div>
+        <div id="moveDirectionBtns" class="direction-btns"></div>
+
+        <div class="action-btns">
+            <button id="lookBtn">Regarder</button>
+            <button id="takeBtn">Prendre</button>
+            <button id="inventoryBtn">Inventaire</button>
+        </div>
+    </div>
+
+    <div id="combatPopup" class="combat-popup">
+        <h3>Un ennemi apparaĆ®t ! Que voulez-vous faire ?</h3>
+        <button id="fightBtn">Combattre</button>
+        <button id="fleeBtn">Fuir</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
