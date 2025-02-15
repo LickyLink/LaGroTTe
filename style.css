@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#game {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #333;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Makes all buttons the same width */
+    min-width: 150px; /* Ensures buttons do not become too small */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#gameOutput {
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.direction-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.action-btns button {
+    margin: 5px;
+}
+
+.combat-popup {
+    display: none;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.combat-popup button {
+    margin: 10px;
+    width: 150px;
+}
